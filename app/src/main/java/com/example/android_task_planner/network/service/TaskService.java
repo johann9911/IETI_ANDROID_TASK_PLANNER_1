@@ -1,7 +1,8 @@
-package com.example.android_task_planner.network.services;
-
+package com.example.android_task_planner.network.service;
 
 import com.example.android_task_planner.network.dto.TaskDto;
+
+import java.util.List;
 
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
@@ -13,11 +14,8 @@ import rx.Observable;
 
 public interface TaskService {
 
-    @GET("api/user/all")
-    Observable listUsers();
-
     @GET("api/task/all")
-    Observable listTasks();
+    Observable<List<TaskDto>> listTasks();
 
     @POST("api/task")
     Observable<TaskDto> saveTask(@Body TaskDto taskDto);
