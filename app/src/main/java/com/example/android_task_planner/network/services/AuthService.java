@@ -1,4 +1,4 @@
-package com.example.android_task_planner.services;
+package com.example.android_task_planner.network.services;
 
 
 import com.example.android_task_planner.network.dto.LoginDto;

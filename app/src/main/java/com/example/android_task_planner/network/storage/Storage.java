@@ -1,4 +1,4 @@
-package com.example.android_task_planner.storage;
+package com.example.android_task_planner.network.storage;
 
 public interface Storage {
 

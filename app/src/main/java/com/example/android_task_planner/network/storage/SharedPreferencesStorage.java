@@ -1,4 +1,4 @@
-package com.example.android_task_planner.storage;
+package com.example.android_task_planner.network.storage;
 
 import android.content.SharedPreferences;
 
@@ -10,7 +10,6 @@ public class SharedPreferencesStorage implements Storage{
     public SharedPreferencesStorage(SharedPreferences sharedPreferences){
         this.sharedPreferences=sharedPreferences;
     }
-
     @Override
     public void setToken(String token) {
         sharedPreferences.edit().putString(TOKEN_KEY,token).apply();
